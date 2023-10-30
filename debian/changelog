@@ -1,5 +1,117 @@
-template-repository (1.0-1) unstable; urgency=medium
+liburi-fetch-perl (0.15-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Import upstream version 0.15.
+  * Drop URI-Fetch-0.13-Fix-MIN_PERL_VERSION.patch which was taken from
+    CPAN RT.
+  * The tests needing internet access are skipped now. So remove all
+    traces disabling them.
+  * Declare compliance with Debian Policy 4.6.0.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- gregor herrmann <gregoa@debian.org>  Thu, 16 Sep 2021 21:23:41 +0200
+
+liburi-fetch-perl (0.13-3) unstable; urgency=medium
+
+  * Team upload.
+  * Add patch from CPAN RT to fix failure with ExtUtils-MakeMaker-7.48
+    which is included in Perl 5.34.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Bump debhelper-compat to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 15 Aug 2021 15:43:53 +0200
+
+liburi-fetch-perl (0.13-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/*: update URLs from {search,www}.cpan.org to MetaCPAN.
+  * Skip tests which need internet access. (Closes: #959641)
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 12.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+  * Update Recommends to use real+provided instead of only provided
+    package.
+  * Update short description.
+  * debian/copyright: remove stanzas about dropped files.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 03 May 2020 17:40:46 +0200
+
+liburi-fetch-perl (0.13-1) unstable; urgency=medium
+
+  * Move maintenance to pkg-perl team
+  * Update Vcs-* fields
+  * Update Homepage to metacpan
+  * Update debhelper compat to 10
+  * Update Standards-Version (no changes)
+  * New upstream release
+    - drop old build-dependency libmodule-build-perl
+    - add build dependency on libtest-requiresinternet-perl
+
+ -- Dominic Hargreaves <dom@earth.li>  Mon, 02 Apr 2018 23:51:45 +0100
+
+liburi-fetch-perl (0.09-1) unstable; urgency=low
+
+  * Add Vcs-* fields
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Switch to minimal dh7 rules
+  * Add Homepage field
+  * Update Standards-Version (no changes)
+  * New upstream release
+  * Refresh debian/copyright
+
+ -- Dominic Hargreaves <dom@earth.li>  Mon, 29 Aug 2011 18:30:57 +0100
+
+liburi-fetch-perl (0.08-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Dominic Hargreaves <dom@earth.li>  Wed, 23 Aug 2006 20:20:42 +0100
+
+liburi-fetch-perl (0.06-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version (no changes).
+
+ -- Dominic Hargreaves <dom@earth.li>  Wed, 10 May 2006 17:59:39 +0100
+
+liburi-fetch-perl (0.05-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Dominic Hargreaves <dom@earth.li>  Tue, 21 Mar 2006 19:24:42 +0000
+
+liburi-fetch-perl (0.04-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Dominic Hargreaves <dom@earth.li>  Tue, 18 Oct 2005 17:01:21 +0100
+
+liburi-fetch-perl (0.03-4) unstable; urgency=low
+
+  * Disable the tests as they depend on the network.
+
+ -- Dominic Hargreaves <dom@earth.li>  Thu,  1 Sep 2005 19:04:07 +0100
+
+liburi-fetch-perl (0.03-3) unstable; urgency=low
+
+  * Add Recommends on libcompress-zlib-perl and moved perl modules from
+    Build-Depends to Build-Depends-Indep.
+  * Update Standards-Version (no changes).
+
+ -- Dominic Hargreaves <dom@earth.li>  Mon,  1 Aug 2005 15:27:33 +0000
+
+liburi-fetch-perl (0.03-2) unstable; urgency=low
+
+  * Correct Recommends from libcache-cache-perl to libcache-perl.
+
+ -- Dominic Hargreaves <dom@earth.li>  Wed, 13 Jul 2005 16:43:39 +0100
+
+liburi-fetch-perl (0.03-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Dominic Hargreaves <dom@earth.li>  Mon, 11 Jul 2005 00:16:03 +0100
